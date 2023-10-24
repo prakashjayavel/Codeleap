@@ -3,10 +3,57 @@
   padding: 0;
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
+.header{
+    height: 90px;
+    width: 100%;
+    padding: 0 8%;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 9999;
 }
-.navbar navbar-dark navbar-expand-sm bg-dark fixed-top{
-  top: 20px;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.logo{
+    width: 160px;
+    margin-bottom: 3px;
+}
+.nav-link{
+    padding: 28px 0;
+}
+.nav-link li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-link li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-link li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.nav-link li a:hover::after{
+    width: 100%;
+
+}
+.btn{
+    background: rgb(104, 106, 112);
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    border-style: none;
 .bvideo{
   max-width: 100%;
   min-height: 700px;
